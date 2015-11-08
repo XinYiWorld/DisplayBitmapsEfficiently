@@ -6,10 +6,12 @@ import android.os.Build;
 import android.support.v4.util.LruCache;
 
 /**
- *LruCache for bitmap
+ *LruCache for bitmap,save it in memory.
  * make the class alone,is a nice code style
+ * note:make single instance
  */
 public class LruCacheUtil {
+
     //LruCache for bitmap
     private static LruCache<String, Bitmap> mMemoryCache;
     static {
